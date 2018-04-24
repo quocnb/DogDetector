@@ -12,6 +12,13 @@
 		7942D9AF208ED3130019FE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7942D9AD208ED3130019FE44 /* Main.storyboard */; };
 		7942D9B1208ED3140019FE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7942D9B0208ED3140019FE44 /* Assets.xcassets */; };
 		7942D9B4208ED3140019FE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7942D9B2208ED3140019FE44 /* LaunchScreen.storyboard */; };
+		7942D9C1208ED3530019FE44 /* Resnet50DogLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942D9BE208ED3530019FE44 /* Resnet50DogLabels.swift */; };
+		7942D9C3208ED3530019FE44 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942D9C0208ED3530019FE44 /* UIImageExtension.swift */; };
+		7942D9C6208ED4200019FE44 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942D9C4208ED4200019FE44 /* UIViewControllerExtension.swift */; };
+		7942D9C9208EDC600019FE44 /* test_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7942D9C8208EDC600019FE44 /* test_1.jpg */; };
+		7942D9DC208EDF480019FE44 /* Resnet50Dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 7942D9D9208EDF480019FE44 /* Resnet50Dog.json */; };
+		7942D9DD208EDF480019FE44 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7942D9DA208EDF480019FE44 /* Resnet50.mlmodel */; };
+		7942D9DE208EDF480019FE44 /* StudentDogModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7942D9DB208EDF480019FE44 /* StudentDogModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		7942D9B0208ED3140019FE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7942D9B3208ED3140019FE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7942D9B5208ED3140019FE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7942D9BE208ED3530019FE44 /* Resnet50DogLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resnet50DogLabels.swift; sourceTree = "<group>"; };
+		7942D9C0208ED3530019FE44 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7942D9C4208ED4200019FE44 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		7942D9C8208EDC600019FE44 /* test_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_1.jpg; sourceTree = "<group>"; };
+		7942D9D9208EDF480019FE44 /* Resnet50Dog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Resnet50Dog.json; sourceTree = "<group>"; };
+		7942D9DA208EDF480019FE44 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		7942D9DB208EDF480019FE44 /* StudentDogModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StudentDogModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,37 @@
 		7942D9A8208ED3130019FE44 /* DogDetector */ = {
 			isa = PBXGroup;
 			children = (
+				7942D9C4208ED4200019FE44 /* UIViewControllerExtension.swift */,
+				7942D9D8208EDF480019FE44 /* MLModel */,
+				7942D9BD208ED3530019FE44 /* Data */,
 				7942D9A9208ED3130019FE44 /* AppDelegate.swift */,
 				7942D9AB208ED3130019FE44 /* ViewController.swift */,
 				7942D9AD208ED3130019FE44 /* Main.storyboard */,
 				7942D9B0208ED3140019FE44 /* Assets.xcassets */,
 				7942D9B2208ED3140019FE44 /* LaunchScreen.storyboard */,
 				7942D9B5208ED3140019FE44 /* Info.plist */,
+				7942D9C8208EDC600019FE44 /* test_1.jpg */,
 			);
 			path = DogDetector;
+			sourceTree = "<group>";
+		};
+		7942D9BD208ED3530019FE44 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7942D9BE208ED3530019FE44 /* Resnet50DogLabels.swift */,
+				7942D9C0208ED3530019FE44 /* UIImageExtension.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7942D9D8208EDF480019FE44 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				7942D9D9208EDF480019FE44 /* Resnet50Dog.json */,
+				7942D9DA208EDF480019FE44 /* Resnet50.mlmodel */,
+				7942D9DB208EDF480019FE44 /* StudentDogModel.mlmodel */,
+			);
+			path = MLModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +162,8 @@
 				7942D9B4208ED3140019FE44 /* LaunchScreen.storyboard in Resources */,
 				7942D9B1208ED3140019FE44 /* Assets.xcassets in Resources */,
 				7942D9AF208ED3130019FE44 /* Main.storyboard in Resources */,
+				7942D9C9208EDC600019FE44 /* test_1.jpg in Resources */,
+				7942D9DC208EDF480019FE44 /* Resnet50Dog.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7942D9DD208EDF480019FE44 /* Resnet50.mlmodel in Sources */,
+				7942D9DE208EDF480019FE44 /* StudentDogModel.mlmodel in Sources */,
 				7942D9AC208ED3130019FE44 /* ViewController.swift in Sources */,
+				7942D9C1208ED3530019FE44 /* Resnet50DogLabels.swift in Sources */,
+				7942D9C6208ED4200019FE44 /* UIViewControllerExtension.swift in Sources */,
 				7942D9AA208ED3130019FE44 /* AppDelegate.swift in Sources */,
+				7942D9C3208ED3530019FE44 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
